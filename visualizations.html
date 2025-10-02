@@ -8,67 +8,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
+    <p class ="visualTitle01">How Would You Like To Eat For Dinner? </p>
+    <p class = "subtitle">Do you know the calorie content of this food?</p>
 
+    <div id="plate"> 
+    <svg width="800" height="800" transform ="translate(50,150)"> 
+        <circle cx="380" cy="380" r="360" fill="white" /> 
+        <circle cx="380" cy="380" r="310" fill="none" stroke="black" stroke-width="3" /> 
+        <circle id="pan" cx="380" cy="380" r="200" fill="none" /> 
 
+        <text id="centerText" x="380" y="380" text-anchor="middle" 
+              dominant-baseline="middle" font-size="40" fill="black">
+            Bon appétit
+        </text>
+        </svg> 
+    </div> 
+        
+    <div class ="Food"> 
+        <p id ="Sandwich" >Sanwich</p> 
+        <p id ="Steak">Steak</p> 
+        <p id ="Sushi">Sushi</p> 
+        <p id ="Tacos">Tacos</p> 
+        <p id ="CurryChicken">Curry Chicken</p> 
+    </div>
 
-<div id ="visualization-container">
-
-    <svg width ="500" height ="700" tranform ="translate(800,600)">
-    <rect x= "-100" y= "-100" width= "200" height= "200" fill= "#F1DBC3" />
-    <circle cx = "0" cy="380" r= "350" fill= "#F8F4E8" />
-    </svg>
-
-
-
-    <svg width = "200" height = "200" viewBox = "-100 -100 200 200" 
-    transform ="translate(-250,800)" >
+    <p class ="visualTitle02">
+        When there's nothing to occupy you, gaze upon the distant trees.
+    </p>
+    
+    <svg width = "1100" height = "500" viewBox = "-100 -100 200 200" 
+    transform ="translate(50,800)" >
     <defs>
         <g id="tree">
             <polygon points= "-10,0 10,0 0 -50" fill= "#38755b" />
-            <line
+         <line
                 x1= "0";
-                y1= "0";
+             y1= "0";
                 x2= "0";
                 y2= "10";
-                stroke= "#778074";
+             stroke= "#778074";
                 stroke-width= "2";
             />
         </g>
     </defs>
 
-    <rect x= "-100" y= "-100" width= "200" height= "200" fill= "#F1DBC3" />
-    <circle cx = "0" cy="380" r= "350" fill= "#F8F4E8" />
 
-    <use href = "#tree" x= "-30" y= "25" transform = "scale(2)" />
-    <use href = "#tree" x= "-20" y= "40" transform = "scale(1.2)" />
-    <use href = "#tree" x= "40" y= "40" /> 
-    <use href = "#tree" x= "50" y= "30" transform = "scale(1.5)" />
-    </svg>
-</div>
+<rect x= "-500" y= "-100" width= "1000" height= "500" fill= "#F1DBC3" />
+<circle cx = "0" cy="380" r= "350" fill= "#F8F4E8" />
 
+<use href = "#tree" x= "-30" y= "25" transform = "scale(2)" />
+<use href = "#tree" x= "-20" y= "40" transform = "scale(1.2)" />
+<use href = "#tree" x= "40" y= "40" /> 
+<use href = "#tree" x= "50" y= "30" transform = "scale(1.5)" />
+</svg>
 
-
-
-
-
-    <footer>
-        <p class ="footer-text">If you have never seen this website before. 
-            You gotta check it out.</p>
-       <p class="footer-name">Your Anonymous Friend J.M.M </p>
-    </footer>
-
-    <body>
+<body>
     <header>
         <h1>Welcome To My Website</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
             <a href="visualizations.html">Visualization</a>
         </nav>
     </header>
     <P></P>
-    </body>
+</body>
+
+<script src="vis.js"></script>
 
 </html> 
 
