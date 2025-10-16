@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vegaStyle.css" />
+    <script>
+      const options = {
+        config: {
+
+        },
+        init: (view) => {
+
+          view.tooltip(new vegaTooltip.Handler().call);
+        },
+        view: {
+          loader: vega.loader({
+            baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+          }),
+          renderer: "canvas",
+        },
+      };
+      vl.register(vega, vegaLite, options);
+    </script>
+    <style></style>
+  </head>
+
+  <body>
+    <h2 class = "VegaTitle">#1 The data record from "videogames_wide.csv"</h2>
+
+    <h2 class = "subtitle01">Name - Categorical</h2>
+
+    <h2 class = "subtitle02">Platform - Categorical</h2>
+
+    <h2 class = "subtitle03">Year - Numerical</h2>
+
+    <h2 class = "subtitle04">Genre - Categorical</h2>
+
+    <h2 class = "VegaTitle02">#2. Create 4 Visual Explorations Using Vega-Lite</h2>
+
+    <h2 class = "subtitle05">Visualization 1: Global Sales by Genre and Platform</h2>
+
+    <h2 class = "subtitle06">Visualization 2: Sales Over Time by Platform and Genre</h2>
+
+    <h2 class = "subtitle07">Visualization 3: Regional Sales vs. Platform</h2>
+
+    <h2 class = "subtitle08">Visualization 4: Explore the central trends of the North American market behind game industry</h2>
+
+    <h2 class = "subtitle09">A Steady Trend: Average North American Game Sales Have Stabilized after 1995</h2>
+    <h2 class = "subtitle10">Comparison with the Japanese market</h2>
+    <h2 class = "subtitle11">Statistics on the Number of Video Games Developed Over Time</h2>
+
+    <div class="container">
+
+      <div id="view"></div>
+      <div id="view2"></div>
+      <div id="view3"></div>
+      <div id="view4"></div>
+      <div id="view5"></div>
+      <div id="view6"></div>
+
+      <!-- visualization 02 -->
+      <div id="view7"></div>
+      <div id="view8"></div>
+      <div id="view9"></div>
+      
+      <!-- visualization 03 -->
+       <div id="view10"></div>
+      <div id="view11"></div>
+      <div id="view12"></div>
+      <div id="view13"></div>
+
+      <!-- visualization 04 -->
+      <div id="view14"></div>
+      <div id="view15"></div>
+      <div id="view16"></div>
+      <div id="view17"></div>
+    </div>
+
+
+    <header>
+            <h1>Vega-Lite Visualization</h1>
+            <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="visualizations.html">Visualization</a>
+            <a href="vegaLite.html">Vega-Lite</a>
+        </nav>
+    </header>
+
+    <script type="module" src="vegaLiteVis.js"></script>
+  </body>
+</html>
