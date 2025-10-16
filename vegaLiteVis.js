@@ -8,7 +8,7 @@ fetchData().then(async (data) => {
   const vlSpec = vl
     .markText()
     .data(data)
-    .title("Total records of video games in the world 1980-2020")
+    .title("Total record of video games in the world 1980-2020")
     .encode(
         vl.text().fieldQ('Name').aggregate('count')
     )
