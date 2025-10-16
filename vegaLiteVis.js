@@ -169,7 +169,7 @@ fetchData().then(async (data) => {
     .data(data)
     .title("North America Market over time")
     .encode(
-        vl.y().fieldQ('NA_Sales').aggregate('sum').title("Average NA Sales (millions)"),
+        vl.y().fieldQ('NA_Sales').aggregate('sum').title("Total NA Sales (millions)"),
         vl.x().fieldN('Year'),
         vl.color().value("#D64F06")
     )
